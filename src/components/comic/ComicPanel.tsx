@@ -8,11 +8,10 @@ interface ComicPanelProps extends HTMLAttributes<HTMLDivElement> {
   delay?: number;
 }
 
-const ComicPanel = React.forwardRef<HTMLDivElement, ComicPanelProps>(
+export const ComicPanel = React.forwardRef<HTMLDivElement, ComicPanelProps>(
   ({ children, className = "", delay = 0, ...rest }, ref) => {
     // Reference delay here to prevent the ESLint warning
     console.log(delay);
-
     return (
       <div
         ref={ref}
@@ -28,7 +27,4 @@ const ComicPanel = React.forwardRef<HTMLDivElement, ComicPanelProps>(
   }
 );
 
-// Adding displayName for better debugging
 ComicPanel.displayName = "ComicPanel";
-
-export { ComicPanel };
