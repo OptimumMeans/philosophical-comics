@@ -42,35 +42,35 @@ export function ComicViewer({ pages }: ComicViewerProps) {
   };
 
   return (
-    <div className="relative min-h-[600px]">
+    <div className="relative bg-white rounded-lg shadow-lg border border-gray-200 min-h-[600px] p-6">
+      {/* Comic Content */}
       <AnimatePresence mode="wait">
-        <motion.div
-          key={currentPage}
-          {...motionProps}
-          style={{ marginBottom: "4rem" }}
-        >
+        <motion.div key={currentPage} {...motionProps}>
           <ComicPage {...pages[currentPage]} />
         </motion.div>
       </AnimatePresence>
 
-      <div className="absolute bottom-0 left-0 right-0 flex items-center justify-between p-4">
-        <button
-          onClick={prevPage}
-          disabled={currentPage === 0}
-          className="p-2 rounded-full bg-white shadow-lg disabled:opacity-50 disabled:cursor-not-allowed hover:bg-gray-100"
-        >
-          <ChevronLeft className="w-6 h-6" />
-        </button>
-        <div className="text-sm text-gray-600">
-          Page {currentPage + 1} of {pages.length}
+      {/* Navigation Controls - Now sticky */}
+      <div className="sticky bottom-0 left-0 right-0 bg-white border-t border-gray-200 p-4 mt-8">
+        <div className="flex items-center justify-between max-w-7xl mx-auto">
+          <button
+            onClick={prevPage}
+            disabled={currentPage === 0}
+            className="p-2 rounded-full bg-white shadow-lg disabled:opacity-50 disabled:cursor-not-allowed hover:bg-gray-100 transition-colors"
+          >
+            <ChevronLeft className="w-6 h-6" />
+          </button>
+          <div className="text-sm text-gray-600">
+            Page {currentPage + 1} of {pages.length}
+          </div>
+          <button
+            onClick={nextPage}
+            disabled={currentPage === pages.length - 1}
+            className="p-2 rounded-full bg-white shadow-lg disabled:opacity-50 disabled:cursor-not-allowed hover:bg-gray-100 transition-colors"
+          >
+            <ChevronRight className="w-6 h-6" />
+          </button>
         </div>
-        <button
-          onClick={nextPage}
-          disabled={currentPage === pages.length - 1}
-          className="p-2 rounded-full bg-white shadow-lg disabled:opacity-50 disabled:cursor-not-allowed hover:bg-gray-100"
-        >
-          <ChevronRight className="w-6 h-6" />
-        </button>
       </div>
     </div>
   );

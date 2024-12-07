@@ -46,7 +46,7 @@ export default function ComicsPage() {
   return (
     <div className="w-full space-y-8">
       <div className="flex justify-between items-center">
-        <h1 className="text-3xl font-bold">Philosophical Comics</h1>
+        <h1 className="font-heading text-4xl font-bold">Philosophical Comics</h1>
       </div>
 
       <p className="text-gray-600 max-w-2xl">

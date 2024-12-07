@@ -18,6 +18,10 @@ const config: Config = {
       },
     },
     extend: {
+      fontFamily: {
+        heading: ["var(--font-cormorant-garamond)", "serif"],
+        body: ["var(--font-source-sans-3)", "sans-serif"],
+      },
       keyframes: {
         "accordion-down": {
           from: { height: "0" },

@@ -1,31 +1,34 @@
-// src/app/comics/layout.tsx
+// Layout Changes (src/app/layout.tsx)
 import type { Metadata } from "next";
-import localFont from "next/font/local";
+import { Cormorant_Garamond, Source_Sans_3 } from "next/font/google";
 import RootLayout from "@/components/shared/Layout";
 import "./globals.css";
 
-const geistSans = localFont({
-  src: "./fonts/GeistVF.woff",
-  variable: "--font-geist-sans",
-  weight: "100 900",
+const cormorantGaramond = Cormorant_Garamond({
+  subsets: ["latin"],
+  weight: ["400", "600", "700"],
+  display: "swap",
+  variable: "--font-cormorant-garamond", // Add variable property
 });
 
-const geistMono = localFont({
-  src: "./fonts/GeistMonoVF.woff",
-  variable: "--font-geist-mono",
-  weight: "100 900",
+const sourceSans3 = Source_Sans_3({
+  subsets: ["latin"],
+  weight: ["400", "600"],
+  display: "swap",
+  variable: "--font-source-sans-3", // Add variable property
 });
 
 export const metadata: Metadata = {
   title: "Philosophia",
-  description: "Exploring philosophical concepts through visual storytelling in comic-strip form.",
+  description:
+    "Exploring philosophical concepts through visual storytelling in comic-strip form.",
 };
 
 export default function Layout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${cormorantGaramond.variable} ${sourceSans3.variable} font-body`}
       >
         <RootLayout>{children}</RootLayout>
       </body>

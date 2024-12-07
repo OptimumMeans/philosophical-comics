@@ -10,7 +10,9 @@ export default function HomePage() {
     <div className="w-full space-y-8">
       {/* Hero Section */}
       <div className="space-y-4">
-        <h1 className="text-4xl font-bold">Welcome to Philosophia</h1>
+        <h1 className="font-heading text-4xl font-bold">
+          Welcome to Philosophia
+        </h1>
         <p className="text-xl text-gray-600 max-w-2xl">
           Exploring complex philosophical ideas through visual storytelling.
           Join me on a journey through the great ideas that shape our

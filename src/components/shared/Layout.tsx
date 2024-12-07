@@ -43,6 +43,13 @@ const ProfileSidebar = () => (
 const Navigation = () => (
   <nav className="flex justify-between items-center mb-8 py-4 border-b">
     <div className="flex items-center gap-2">
+      <Image 
+        src="/images/logo.png" 
+        alt="Philosophia Logo"
+        width={128}
+        height={128}
+        className="h-32 w-auto"
+      />
       <Link href="/" className="text-lg font-medium">
         Philosophia
       </Link>

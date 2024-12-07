@@ -8,7 +8,7 @@ import Link from "next/link";
 export default function CharactersPage() {
   return (
     <div className="w-full space-y-8">
-      <h1 className="text-3xl font-bold mb-6">Philosophical Characters</h1>
+      <h1 className="font-heading text-4xl font-bold">Philosophical Characters</h1>
 
       <Card>
         <CardHeader>
