@@ -335,24 +335,62 @@ export default function NietzscheBecomingPage() {
       panels: [
         <div
           key="4-1"
-          className="aspect-square bg-gradient-to-r from-indigo-50 to-purple-50 p-6"
+          className="col-span-2 border-4 border-black p-4 bg-white"
         >
-          <div className="text-xl font-bold mb-4">Metamorphosis</div>
-          <ComicQuote
-            text="One is not born, but rather becomes..."
-            author="Simone de Beauvoir"
-            work="The Second Sex"
-          />
+          <div className="relative">
+            <img
+              src="/images/comic4.png"
+              alt="The process of transformation and becoming"
+              className="w-full mb-4"
+            />
+          </div>
         </div>,
         <div
           key="4-2"
-          className="aspect-square bg-gradient-to-r from-purple-50 to-indigo-50 p-6"
+          className="aspect-square border-4 border-black p-6 bg-white"
         >
-          <div className="text-xl font-bold mb-4">Self-Creation</div>
-          <div className="relative flex-1 border-2 border-gray-300 rounded-lg p-4">
-            {/* Placeholder for butterfly emergence imagery */}
-            <div className="absolute inset-0 bg-gray-100 opacity-20" />
-            <div className="relative z-10">Emergence</div>
+          <div className="h-full flex flex-col space-y-6">
+            <h3 className="text-xl font-bold text-gray-800">
+              Philosophical Reflections
+            </h3>
+
+            <div className="space-y-6">
+              <div className="border-l-4 border-blue-500 pl-4">
+                <h4 className="text-blue-600 font-semibold">
+                  Resistance and Recovery
+                </h4>
+                <p className="text-sm italic mt-1">
+                  "To recover ourselves and our meaning, we must rise above a
+                  state of denial and embrace the histories of resistance that
+                  can transform our worldviews." - bell hooks, Black Looks
+                </p>
+              </div>
+
+              <div className="border-l-4 border-green-500 pl-4">
+                <h4 className="text-blue-600 font-semibold">
+                  Active Transformation
+                </h4>
+                <p className="text-sm italic mt-1">
+                  "Resistance is the tension between subjectification and active
+                  subjectivity, that minimal sense of agency required for the
+                  oppressing-resisting relation being an active one." - Toward a
+                  Decolonial Feminism
+                </p>
+              </div>
+
+              <div className="border-l-4 border-purple-500 pl-4">
+                <h4 className="text-blue-600 font-semibold">
+                  The Path Forward
+                </h4>
+                <p className="text-sm italic mt-1">
+                  "The greatest weight: What, if some day or night a demon were
+                  to steal after you into your loneliest loneliness and say to
+                  you... would you not throw yourself down and gnash your teeth
+                  and curse the demon who spoke thus?" - Nietzsche, The Gay
+                  Science
+                </p>
+              </div>
+            </div>
           </div>
         </div>,
       ],
@@ -365,32 +403,56 @@ export default function NietzscheBecomingPage() {
       panels: [
         <div
           key="5-1"
-          className="aspect-square bg-gradient-to-r from-teal-50 to-blue-50 p-6"
+          className="col-span-2 border-4 border-black p-4 bg-white"
         >
-          <div className="text-xl font-bold mb-4">Multiple Paths</div>
-          <div className="grid grid-cols-2 gap-2 h-full">
-            <div className="border-2 border-gray-300 rounded-lg p-2">
-              Eastern
-            </div>
-            <div className="border-2 border-gray-300 rounded-lg p-2">
-              Western
-            </div>
-            <div className="border-2 border-gray-300 rounded-lg p-2">
-              Ancient
-            </div>
-            <div className="border-2 border-gray-300 rounded-lg p-2">
-              Modern
-            </div>
+          <div className="relative">
+            <img
+              src="/images/comic5.png"
+              alt="The integration of different philosophical paths"
+              className="w-full mb-4"
+            />
           </div>
         </div>,
         <div
           key="5-2"
-          className="aspect-square bg-gradient-to-r from-blue-50 to-teal-50 p-6"
+          className="aspect-square border-4 border-black p-6 bg-white"
         >
-          <div className="text-xl font-bold mb-4">Synthesis</div>
-          <div className="flex flex-col space-y-4 h-full">
-            <div className="flex-1 border-2 border-gray-300 rounded-lg p-4">
-              Finding One's Own Way
+          <div className="h-full flex flex-col space-y-6">
+            <h3 className="text-xl font-bold text-gray-800">
+              Philosophical Reflections
+            </h3>
+
+            <div className="space-y-6">
+              <div className="border-l-4 border-blue-500 pl-4">
+                <h4 className="text-blue-600 font-semibold">
+                  Shared Knowledge
+                </h4>
+                <p className="text-sm italic mt-1">
+                  "The passing from mouth to mouth, from hand to hand of lived
+                  practices, values, beliefs, ontologies, space-times, and
+                  cosmologies constitutes one." - Revolutionary Renegades
+                </p>
+              </div>
+
+              <div className="border-l-4 border-green-500 pl-4">
+                <h4 className="text-blue-600 font-semibold">
+                  Breaking Convention
+                </h4>
+                <p className="text-sm italic mt-1">
+                  "Breaking with conventional racist paradigms, they create
+                  alternative texts that are not solely reactions." - bell
+                  hooks, Black Looks
+                </p>
+              </div>
+
+              <div className="border-l-4 border-purple-500 pl-4">
+                <h4 className="text-blue-600 font-semibold">Final Synthesis</h4>
+                <p className="text-sm italic mt-1">
+                  "You have your way. I have my way. As for the right way, the
+                  correct way, and the only way, it does not exist." -
+                  Nietzsche, Thus Spoke Zarathustra
+                </p>
+              </div>
             </div>
           </div>
         </div>,
